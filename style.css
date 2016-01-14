@@ -1,6 +1,22 @@
 
 .page-header {
-	font-size: 3em;
-	font-weight: bold;
-	color: blue;
+	font-size: 30px;
+	font-weight: normal;
+	color: #780000;
+	font-style: oblique;
+}
+
+.link{
+	font-size: 25px;	
+}
+
+.subTitle{
+	font-size: 25px;
+	color: #383838
+}
+
+.content{
+	font-size: 20px;
+	color: #585858;
+	margin-left:1em;
 }

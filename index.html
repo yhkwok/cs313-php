@@ -5,12 +5,54 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="demo.js"></script>
+	<title>Jonathan's Home page</title>
 </head>
 
-<body>
-	<p class="page-header" id="pageHeaderID"> Hello World </p>
-	<button type="button" onclick="changeColor()">Click Me</button>
-
+<body background = 'bg.png'>
+	<p class="page-header" id="pageHeaderID"> Hello World, This is my homepage for CS 313</p>
+	
+	<hr>
+	<p class="subTitle">Preface</p>
+	<p class="content">I'm really not good at expressing myself, especially in a fancy way,
+	I guess keeping it looks clean will be my approach.</p>
+	<hr>
+	<div id="everything">
+	<a href="assignments.html" class="link" id="link" onmouseover="mouseOver()" onmouseout="mouseOut()">->-> CS 313 Assignments <-<-</a>
+	<br/>
+	<table border="1">
+    <tr>
+        <th class="subTitle">Name: </th>
+        <th class="content">YH Jonathan Kwok</th>
+    </tr>
+    <tr>
+        <td class="subTitle">Major: </td>
+        <td class="content">Computer Science</td>
+    </tr>
+    <tr>
+        <td class="subTitle">From: </td>
+        <td class="content">Hong Kong / Canada</td>
+    </tr>
+	</table>
+	
+	<p class="content">My family lives in Hong Kong, my sister and I were born in Canada,
+	and my brother was born in California, so two Canadian and an American in our family.
+	(Trying to find a good family picture here, just can't find any good ones on hand...)</p>
+	
+	<p class="content">I am a French Horn player, but because of my schedule, I am not taking any music courses now.
+	Fun fact, the serial number of my French Horn ends with 007, therefore I always call it Mr. 007 :) </p>
+	<img src="horn.jpg" alt="horn" width="640" height="364.8"/>
+	
+	<p class="content">I love driving, and I drives a 2000 Mitsubishi Galant, yes, that Galant with 
+	Carbon Fiber hood is mine. This car is not fast at all, but it fits my need, and I love it.</p>
+	<img src="galant.jpg" alt="galant" width="640" height="364.8"/>
+	
+	<p class="content">I don't think I'm a good programmer yet, and I wish I can learn more from you all,
+	looking forward to work with you all this semester.</p>
+	
+	</div>
+	
+	<button type="button" onclick="toggle()">I'm done reading these</button>
+	
 </body>
 
 </html>
