@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 	<head>
@@ -7,7 +7,7 @@
 	</head>
 
 	<body background = 'paisley.png'>
--->
+
 	<?php
 	$file = fopen("temp.csv","r");
 
@@ -74,11 +74,8 @@
 	//echo "<p>Question 4: Are you handsome?</p><br/>";
 	echo $q4y . '/' . $q4Total . " answered Yes<br/>";
 	echo $q4n . '/' . $q4Total . " answered No<br/>";
-	//echo "<br/><div/>";
+	//echo "<br/></div>";
 
 ?>
-<!--
 	</body>
 </html>
-
--->
