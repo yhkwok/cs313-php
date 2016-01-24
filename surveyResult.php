@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+	<title>PHP Survey</title>
+</head>
+
+<body background = 'paisley.png'>
 <?php
 $file = fopen("temp.csv","r");
 
@@ -67,3 +76,8 @@ echo $q4n . '/' . $q4Total . " answered No<br/>";
 echo "<br/><div/>";
 
 ?>
+
+
+</body>
+
+</html>
