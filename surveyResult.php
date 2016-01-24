@@ -55,26 +55,26 @@
 
 	fclose($file);
 	//Display the data
-	echo "<h1>Here is the result: </h1>"
-	echo "<div><p>Question 1: Have you eaten yet?</p><br/>";
+	//echo "<h1>Here is the result: </h1>"
+	//echo "<div><p>Question 1: Have you eaten yet?</p><br/>";
 	echo $q1y . '/' . $q1Total . " answered Yes<br/>";
 	echo $q1n . '/' . $q1Total . " answered No<br/>";
-	echo "<br/><hr/>";
+	//echo "<br/><hr/>";
 
-	echo "<p>Question 2: Do you like snow?</p><br/>";
+	//echo "<p>Question 2: Do you like snow?</p><br/>";
 	echo $q2y . '/' . $q2Total . " answered Yes<br/>";
 	echo $q2n . '/' . $q2Total . " answered No<br/>";
-	echo "<br/><hr/>";
+	//echo "<br/><hr/>";
 
-	echo "<p>Question 3: Is Brother Burton awesome?</p><br/>";
+	//echo "<p>Question 3: Is Brother Burton awesome?</p><br/>";
 	echo $q3y . '/' . $q3Total . " answered Yes<br/>";
 	echo $q3n . '/' . $q3Total . " answered No<br/>";
-	echo "<br/><hr/>";
+	//echo "<br/><hr/>";
 
-	echo "<p>Question 4: Are you handsome?</p><br/>";
+	//echo "<p>Question 4: Are you handsome?</p><br/>";
 	echo $q4y . '/' . $q4Total . " answered Yes<br/>";
 	echo $q4n . '/' . $q4Total . " answered No<br/>";
-	echo "<br/><div/>";
+	//echo "<br/><div/>";
 
 ?>
 <!--
