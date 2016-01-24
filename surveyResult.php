@@ -99,7 +99,7 @@
 	echo "</div>";
 
 ?>
-	<button onclick="location.href='resetAndRedirect.php'">Make another vote</button><br/>
+	<button onclick="location.href='resetAndRedirect.php'">Make another vote (Reset session)</button><br/>
 	<a href="assignments.html" class="link" id="link">Back to Assignment Page</a><br/><br/>
 	</body>
 </html>
