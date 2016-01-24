@@ -96,6 +96,8 @@
 	echo "<h4>Total votes: " . $q4Total . "</h4>";
 	echo "<hr/>";
 
+	<button onclick="location.href='resetAndRedirect.php'">Make another vote</button><br/>
+	
 	echo "</div>";
 
 ?>
