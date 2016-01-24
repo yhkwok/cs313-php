@@ -55,7 +55,7 @@
 
 	fclose($file);
 	//Display the data
-	//echo "<h1>Here is the result: </h1>"
+	echo "<h1>Here is the result: </h1>"
 	//echo "<div><p>Question 1: Have you eaten yet?</p><br/>";
 	echo $q1y . '/' . $q1Total . " answered Yes<br/>";
 	echo $q1n . '/' . $q1Total . " answered No<br/>";
