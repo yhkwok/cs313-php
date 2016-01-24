@@ -1,7 +1,4 @@
 <?php
-// Standard inclusions     
-include("pChart/pData.class");  
-include("pChart/pChart.class");  
 $file = fopen("temp.csv","r");
 
 $q1Total = $q2Total = $q3Total = $q4Total = 0;
@@ -49,24 +46,6 @@ while(! feof($file))
 fclose($file);
 //Display the data
 echo "Question 1: Have you eaten yet?<br/>";
-$DataSet = new pData;
-$DataSet->AddPoint(array($q1y, $q1n),"Serie1");
-$DataSet->AddPoint(array("Yes", "No"),"Serie2");
-$DataSet->AddAllSeries();
-$DataSet->SetAbsciseLabelSerie("Serie2");
-
-// Initialise the graph  
- $Test = new pChart(380,200);  
- $Test->drawFilledRoundedRectangle(7,7,373,193,5,240,240,240);  
- $Test->drawRoundedRectangle(5,5,375,195,5,230,230,230);  
- 
- // Draw the pie chart  
- $Test->setFontProperties("Fonts/tahoma.ttf",8);  
- $Test->drawPieGraph($DataSet->GetData(),$DataSet->GetDataDescription(),150,90,110,PIE_PERCENTAGE,TRUE,50,20,5);  
- $Test->drawPieLegend(310,15,$DataSet->GetData(),$DataSet->GetDataDescription(),250,250,250);  
-  
- $Test->Render("example10.png");
-
 echo $q1y . '/' . $q1Total . " answered Yes<br/>";
 echo $q1n . '/' . $q1Total . " answered No<br/>";
 echo "<br/>";
