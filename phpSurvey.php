@@ -55,7 +55,7 @@ exit;
 <button type="submit">Submit</button>
 </form>
 </div>
-
+<a href="assignments.html" class="link" id="link">Back to Assignment Page</a><br/><br/>
 </body>
 
 </html>
