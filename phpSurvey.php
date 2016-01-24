@@ -22,11 +22,11 @@ exit;
 ?>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="styleSheet.css" />
 	<title>PHP Survey</title>
 </head>
 
-<body>
+<body background = 'paosley.png'>
 <button onclick="location.href='surveyResult.php'">
      Just show me the result</button>
 <form action="handleSurvey.php" method="post">

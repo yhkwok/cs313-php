@@ -1,0 +1,136 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #ad8667 url('bg.jpg');
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 400;
+		color: #515151;
+	}
+
+    a 
+    {
+        background-color: yellow;
+        font-size: medium;
+        text-align: center;
+    }
+
+
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+
+        .style1 {
+            color: #006600;
+            font-weight: bold;
+            font-size:x-large;
+            font-family: 'Lucida Sans Unicode',Charcoal,sans-serif
+        }
+        .style2 {
+            color: #6c6c6c;
+            font-family: 'Times New Roman', sans-serif;
+            font-size:large;
+        }
+        .style3 {
+            color: #454445;
+            font-style: italic;
+            font-family: 'courier', sans-serif;
+            font-size:x-small;
+        }
+        .style4 {
+            font-size: xx-large;
+            font-family: 'arial', sans-serif;
+        }
+
+        .container
+	{
+		margin: 0em auto;
+		width: 1200px;
+	}
+	
+        div
+        {
+            border:2px solid #a1a1a1;
+            padding:10px 40px; 
+            background-color:lightblue;
+            width:700px;
+            border-radius:25px;
+            text-align:center;
+        }
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+	
+	#header
+	{
+		position: relative;
+		height: 150px;
+	}
+
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	footer
+	{
+        float:left;
+		background-color:mediumpurple;
+	}
+
