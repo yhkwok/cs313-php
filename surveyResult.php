@@ -57,8 +57,8 @@
 	//Display the data
 	echo "<h1>Here is the result: </h1>";
 	echo "<div><h2>Question 1: Have you eaten yet?</h2><br/>";
-	$q1yper = strval(intval($q1y) / intval ($q1Total));
-	$q1nper = strval(intval($q1n) / intval ($q1Total));
+	$q1yper = strval(intval($q1y) / intval ($q1Total) * 100);
+	$q1nper = strval(intval($q1n) / intval ($q1Total) * 100);
 	echo "<h3>" . $q1yper . "% answered Yes, and</h3>";
 	echo "<h3>" . $q1nper . "% answered No. </h3>";
 	echo "<h4>Vote Yes: " . $q1y . "</h4>";
@@ -67,8 +67,8 @@
 	echo "<hr/>";
 
 	echo "<h2>Question 2: Do you like snow?</h2><br/>";
-	$q2yper = strval(intval($q2y) / intval ($q2Total));
-	$q2nper = strval(intval($q2n) / intval ($q2Total));
+	$q2yper = strval(intval($q2y) / intval ($q2Total) * 100);
+	$q2nper = strval(intval($q2n) / intval ($q2Total) * 100);
 	echo "<h3>" . $q2yper . "% answered Yes, and</h3>";
 	echo "<h3>" . $q2nper . "% answered No. </h3>";
 	echo "<h4>Vote Yes: " . $q2y . "</h4>";
@@ -77,8 +77,8 @@
 	echo "<hr/>";
 
 	echo "<h2>Question 3: Is Brother Burton awesome?</h2><br/>";
-	$q3yper = strval(intval($q3y) / intval ($q3Total));
-	$q3nper = strval(intval($q3n) / intval ($q3Total));
+	$q3yper = strval(intval($q3y) / intval ($q3Total) * 100);
+	$q3nper = strval(intval($q3n) / intval ($q3Total) * 100);
 	echo "<h3>" . $q3yper . "% answered Yes, and</h3>";
 	echo "<h3>" . $q3nper . "% answered No. </h3>";
 	echo "<h4>Vote Yes: " . $q3y . "</h4>";
@@ -87,8 +87,8 @@
 	echo "<hr/>";
 
 	echo "<h2>Question 4: Are you handsome?</h2><br/>";
-	$q4yper = strval(intval($q4y) / intval ($q4Total));
-	$q4nper = strval(intval($q4n) / intval ($q4Total));
+	$q4yper = strval(intval($q4y) / intval ($q4Total) * 100);
+	$q4nper = strval(intval($q4n) / intval ($q4Total) * 100);
 	echo "<h3>" . $q4yper . "% answered Yes, and</h3>";
 	echo "<h3>" . $q4nper . "% answered No. </h3>";
 	echo "<h4>Vote Yes: " . $q4y . "</h4>";
