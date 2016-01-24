@@ -95,11 +95,10 @@
 	echo "<h4>Vote No: " . $q4n . "</h4>";
 	echo "<h4>Total votes: " . $q4Total . "</h4>";
 	echo "<hr/>";
-
-	echo "<button onclick="location.href='resetAndRedirect.php'">Make another vote</button><br/>";
 	
 	echo "</div>";
 
 ?>
+	<button onclick="location.href='resetAndRedirect.php'">Make another vote</button><br/>
 	</body>
 </html>
