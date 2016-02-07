@@ -8,7 +8,7 @@ function loadDatabase()
   $dbUser = "";
   $dbPassword = "";
 
-     $dbName = "imdb";
+     $dbName = "carseller";
 
      $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
