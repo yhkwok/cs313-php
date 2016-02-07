@@ -20,7 +20,7 @@
 <input type="radio" name="filter" value="price>">Greater than price<br/>
 <input type="radio" name="filter" value="price<">Less than a price<br/>
 <input type="radio" name="filter" value="all">Just show me the whole inventory<br/>
-<p>Greater then / Less than / Brand name / N/A</p><input type="text" name="input">
+<h2>Greater then / Less than / Brand name / N/A:</h2><input type="text" name="input">
 <hr/>
 
 <hr/>

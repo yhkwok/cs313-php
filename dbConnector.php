@@ -16,7 +16,7 @@ function loadDatabase()
      {
           // Not in the openshift environment
           //echo "Using local credentials: "; 
-          $db = new PDO('mysql:host=127.0.0.1;dbname=imdb', 'movieGuy', 'password!');
+          $db = new PDO('mysql:host=127.0.0.1;dbname=carseller', 'movieGuy', 'password!');
 		  
      }
      else 
