@@ -5,7 +5,7 @@
 	<title>Filtered Result</title>
 </head>
 
-<body>
+<body background = 'dark_embroidery.png'>
 	<h1>Car Inventory</h1>
 
 <?php
@@ -64,6 +64,7 @@ foreach ($db->query($queryString) as $row)
 }
 echo "</table></div>";
 ?>
+<a href="assignments.html" class="link" id="link">Back to Assignment Page</a><br/><br/>
 
 </body>
 

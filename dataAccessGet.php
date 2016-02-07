@@ -7,7 +7,7 @@
 	<title>Search page</title>
 </head>
 
-<body background = 'paisley.png'>
+<body background = 'dark_embroidery.png'>
 <h1>Please pick a method to filter the results:</h1>
 <hr/>
 <div>
