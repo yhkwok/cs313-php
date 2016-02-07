@@ -23,7 +23,7 @@ if($_POST["filter"] == 'year<' && isset($_POST["input"])){
 	$filter = "WHERE mo." . $_POST["filter"] . $_POST["input"];
 }
 if($_POST["filter"] == 'make=' && isset($_POST["input"])){
-	$filter = "WHERE maname" . $_POST["input"];
+	$filter = "WHERE maname=" . $_POST["input"];
 }
 if($_POST["filter"] == 'miles>' && isset($_POST["input"])){
 	$filter = "WHERE c." . $_POST["filter"] . $_POST["input"];
