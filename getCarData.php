@@ -53,9 +53,9 @@
 		if (isset($_POST["makeID"]) and isset($_POST["modelID"]))
 			echo "<input type=\"submit\" value=\"Submit\">";
 		else
-			echo "<input type=\"submit\" value=\"Next\">";
+			echo "<input type=\"submit\" value=\"Next\"></form>";
 		
-	</form> 
+	 
 		if (isset($_POST["makeID"]) and isset($_POST["modelID"]) and isset($_POST["price"]) and isset($_POST["miles"]) and isset($_POST["sellerDisplayName"]) and isset($_POST["sellerEmail"]))
 		{
 			$price = $_POST["price"];
