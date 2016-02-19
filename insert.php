@@ -4,7 +4,6 @@
 	
 	if (isset($_POST["makeID"]) and isset($_POST["modelID"]) and isset($_POST["price"]) and isset($_POST["miles"]) and isset($_POST["sellerDisplayName"]) and isset($_POST["sellerEmail"]))
 	{
-		//$insert = $db->prepare('INSERT INTO cars (price, miles, sellerDisplayName, sellerEmail, postDate, modelID) VALUES (?, ?, ?, ?, ?, ?)');
 		$price = $_POST["price"];
 		$miles = $_POST["miles"];
 		$sdn = $_POST["sellerDisplayName"];
@@ -12,8 +11,6 @@
 		date_default_timezone_set('America/Denver');
 		$date = date('m/d/Y h:i:s a', time());
 		$modelID = $_POST["modelID"];
-		//$insert->bindParam($price, $miles, $sdn, $se, $date, $modelID);
-		//$insert->execute();
 		$insert = $db->prepare('INSERT INTO cars (price, miles, sellerDisplayName, sellerEmail, postDate, modelID) VALUES ($price, $miles, $sdn, $se, $date, $modelID)');
 		$ID = $db->lastInsertId();
 		
@@ -25,10 +22,4 @@
 			}
 		
 	}
-	echo $_POST["makeID"] . " " . 
-	$_POST["modelID"] . " " . 
-	$_POST["price"] . " " . 
-	$_POST["miles"] . " " . 
-	$_POST["sellerDisplayName"] . " " . 
-	$_POST["sellerEmail"];
 ?>
