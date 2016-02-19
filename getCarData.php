@@ -57,8 +57,8 @@
 		?>
 	</form> 
 	<?php
-	if (isset($_POST["makeID"]) and isset($_POST["modelID"]) and isset($_POST["price"]) and isset($_POST["miles"]) and isset($_POST["sellerDisplayName"]) and isset($_POST["sellerEmail"]))
-		echo $_POST["makeID"] . " " . $_POST["modelID"] . " " . $_POST["price"] . " " . $_POST["miles"] . " " . $_POST["sellerDisplayName"] . " " . $_POST["sellerEmail"];
+	//if (isset($_POST["makeID"]) and isset($_POST["modelID"]) and isset($_POST["price"]) and isset($_POST["miles"]) and isset($_POST["sellerDisplayName"]) and isset($_POST["sellerEmail"]))
+		//echo $_POST["makeID"] . " " . $_POST["modelID"] . " " . $_POST["price"] . " " . $_POST["miles"] . " " . $_POST["sellerDisplayName"] . " " . $_POST["sellerEmail"];
 	?>
 	</body>
 	</html>
