@@ -1,6 +1,5 @@
 <?php
 	require "dbConnector.php";
-	require "unsetReset.php";
 	$db = loadDatabase(); 
 	
 ?>
