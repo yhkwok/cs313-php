@@ -1,6 +1,8 @@
 <?php
 	require "dbConnector.php";
+	require "unsetReset.php";
 	$db = loadDatabase(); 
+	
 ?>
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <HTML>
@@ -51,10 +53,20 @@
 			Seller's Email: <input type=\"text\" name=\"sellerEmail\"></input><br/>";
 		}
 		if (isset($_POST["makeID"]) and isset($_POST["modelID"]))
-			echo "<input type=\"submit\" value=\"Submit\">";
+		{
+			echo "<button type=\"submit\" value=\"Submit\">Submit</button>";
+			
+		}
+			
 		else
-			echo "<input type=\"submit\" value=\"Next\"></form>";
+		{
+			echo "<button type=\"submit\" value=\"Submit\">Next</button>";
+		}
 	?>
+	<button type="reset" 
+	value="Reset" 
+	onclick="location.href = 'getCarData.php';">Reset</button>
+	</form>
 	</body>
 	</html>
 	
