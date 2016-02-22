@@ -11,8 +11,8 @@
 	<h1>Are you searching or selling?</h1>
 	
 	<div>
-	<a href="dataAccessGet.php"><img src="search.PNG"></a>
-	<a href="login.php"><img src="add.PNG"></a>
+	<a href="dataAccessGet.php"><img src="search.png"></a>
+	<a href="login.php"><img src="add.png"></a>
 	</div>
 </BODY>
 </HTML>
