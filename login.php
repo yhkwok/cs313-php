@@ -1,8 +1,3 @@
-<?php
-	session_start();
-	include "dbConnector.php";
-	require "password.php";
-?>
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <HTML>
    <HEAD>
