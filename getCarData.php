@@ -1,23 +1,29 @@
 <?php
 	require "dbConnector.php";
-	$db = loadDatabase(); 
-	
 ?>
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <HTML>
    <HEAD>
-      <TITLE>
-         Search
-      </TITLE>
+		<TITLE>Search</TITLE>
    </HEAD>
-<BODY>
+<BODY background = 'small_steps.png'>
+	<a href="guestHomePage.php"><img src="logo.PNG"></a>
+	<a href="logout.php"><h3>Logout</h3></a>
+	<hr>
 <?php
+	session_start();
+	if (isset($_SESSION['id'])) {
+		echo '<h1>Welcome ' . $_SESSION['disp'] . '</h1>';
+	} else {
+		header("LOCATION:login.php");
+	}
+	
 	if (isset($_POST["makeID"]) and isset($_POST["modelID"]))
 		echo "<form action=\"insert.php\" method=\"post\">";
 	else
 		echo "<form action=\"\" method=\"post\">";
 		
-		$sql = $db->query('SELECT * FROM makes');
+		$sql = $conn->query('SELECT * FROM makes');
 
 		echo "Make: <select name=\"makeID\">";
 		while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
@@ -32,7 +38,7 @@
 		if (isset($_POST["makeID"]))
 		{
 			$query='SELECT * FROM models mo where mo.makeID =' . $_POST["makeID"];
-			$sql = $db->query($query);
+			$sql = $conn->query($query);
 			echo " Model: <select name=\"modelID\">";
 			while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
 				if ((isset($_POST["modelID"])) and ($row["id"]===$_POST["modelID"]))

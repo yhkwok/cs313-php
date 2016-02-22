@@ -3,9 +3,19 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="styleSheet.css" />
 	<title>Inserted Result</title>
+	<?php
+		//every protected page should have this in header
+		session_start();
+		if (!isset($_SESSION['id'])) {
+			header("LOCATION:login.php");
+		}
+	?>
 </head>
 
-<body>
+<BODY background = 'small_steps.png'>
+	<a href="guestHomePage.php"><img src="logo.PNG"></a>
+	<a href="logout.php"><h3>Logout</h3></a>
+	<hr>
 	<?php
 	require "dbConnector.php";
 	$db = loadDatabase(); 
@@ -18,12 +28,12 @@
 		$se = $_POST["sellerEmail"];
 		$date = date('Y-m-d H:i:s');
 		$modelID = $_POST["modelID"];
-		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$query = "INSERT INTO cars 
 		(price, miles, sellerDisplayName, sellerEmail, postDate, modelID) 
 		VALUES ('$price', '$miles', '$sdn', '$se', '$date', '$modelID')";
-		$db->exec($query);
-		$ID = $db->lastInsertId();
+		$conn->exec($query);
+		$ID = $conn->lastInsertId();
 		
 		$queryString = 'SELECT mo.year, ma.name as maname, mo.name as moname, c.miles, c.price, c.sellerDisplayName,
 		c.sellerEmail, c.postDate
@@ -43,7 +53,7 @@
 		echo "<td>Seller's Email</td>";
 		echo "<td>Post Date</td>";
 		echo "</tr>";
-		foreach ($db->query($queryString) as $row)
+		foreach ($conn->query($queryString) as $row)
 		{
 			echo "<tr><td>".$row['year']."</td>";
 			echo "<td>".$row['maname']."</td>";

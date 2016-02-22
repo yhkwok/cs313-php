@@ -5,12 +5,14 @@
 	<title>Filtered Result</title>
 </head>
 
-<body background = 'dark_embroidery.png'>
+<BODY background = 'small_steps.png'>
+	<a href="guestHomePage.php"><img src="logo.PNG"></a>
+	<a href="dataAccessGet.php"><h3>Back to Search page</h3></a>
+	<hr>
 	<h1>Car Inventory</h1>
 
 <?php
 require("dbConnector.php"); 
-$db = loadDatabase(); 
 $filter = $value = "";
 
 if($_POST["filter"] == 'all'){
@@ -22,8 +24,8 @@ if($_POST["filter"] == 'year>' && isset($_POST["input"])){
 if($_POST["filter"] == 'year<' && isset($_POST["input"])){
 	$filter = "WHERE mo." . $_POST["filter"] . $_POST["input"];
 }
-if($_POST["filter"] == 'make=' && isset($_POST["input"])){
-	$filter = "WHERE maname='" . $_POST["input"] . "'";
+if($_POST["filter"] == 'brand' && isset($_POST["input"])){
+	$filter = "WHERE ma." . $_POST["filter"] . $_POST["input"];
 }
 if($_POST["filter"] == 'miles>' && isset($_POST["input"])){
 	$filter = "WHERE c." . $_POST["filter"] . $_POST["input"];
@@ -45,7 +47,6 @@ JOIN makes ma ON mo.makeId = ma.id ' . $filter;
 ;
 
 echo "<div>";
-echo "<h1>Here is the result: </h1>";
 echo "<table>";
 echo "<tr><td>Year</td>";
 echo "<td>Make</td>";
@@ -53,7 +54,7 @@ echo "<td>Model</td>";
 echo "<td>Miles</td>";
 echo "<td>Price</td>";
 echo "<td>Seller</td></tr>";
-foreach ($db->query($queryString) as $row)
+foreach ($conn->query($queryString) as $row)
 {
 	echo "<tr><td>".$row['year']."</td>";
 	echo "<td>".$row['maname']."</td>";
@@ -64,7 +65,6 @@ foreach ($db->query($queryString) as $row)
 }
 echo "</table></div>";
 ?>
-<a href="assignments.html" class="link" id="link">Back to Assignment Page</a><br/><br/>
 
 </body>
 

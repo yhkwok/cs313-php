@@ -7,9 +7,11 @@
 	<title>Search page</title>
 </head>
 
-<body background = 'dark_embroidery.png'>
+<BODY background = 'small_steps.png'>
+<a href="guestHomePage.php"><img src="logo.PNG"></a>
+<hr>
 <h1>Please pick a method to filter the results:</h1>
-<hr/>
+
 <div>
 <form action="dataAccessReturn.php" method="post">
 <input type="radio" name="filter" value="year>">Greater than a Year<br/>
@@ -20,14 +22,13 @@
 <input type="radio" name="filter" value="price>">Greater than price<br/>
 <input type="radio" name="filter" value="price<">Less than a price<br/>
 <input type="radio" name="filter" value="all">Just show me the whole inventory<br/>
-<h2>Greater then / Less than / Brand name / N/A:</h2><input type="text" name="input">
-<hr/>
+<b>Greater then / Less than / Brand name / N/A:</b><br>
+<input type="text" name="input">
 
-<hr/>
 <button type="submit">Submit</button>
 </form>
 </div>
-<a href="assignments.html" class="link" id="link">Back to Assignment Page</a><br/><br/>
+
 </body>
 
 </html>
